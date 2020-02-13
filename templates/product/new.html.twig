@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Product{% endblock %}
+
+{% block body %}
+    <style>
+        .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #product > div {
+            margin: 15px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        button > *{
+            text-decoration: none;
+            color: rgb(76, 76, 76);
+            text-transform: capitalize;
+            margin: 10px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    </style>
+
+<div class="block">
+
+    <h1>Ajouter un produit</h1>
+    {{ include('product/_form.html.twig') }}
+
+    <button><a href="{{ path('product_index') }}">Retour à la liste</a></button>
+
+</div>
+{% endblock %}

@@ -1,0 +1,8 @@
+id,product,family,type,date_expiration,perime
+0,'riz',0,0,,
+1,'chocolat',1,0,12-04-2021,1
+2,'sauce aux 3 poivres',0,1,30-05-2020,1
+3,'céréales',1,0,12-01-2020,0
+4,'chapelures',1,1,18-09-2021,1
+ 
+
